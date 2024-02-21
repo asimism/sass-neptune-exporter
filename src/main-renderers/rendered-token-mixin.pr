@@ -19,7 +19,7 @@ Note: Token is passed as `context` property because it is injected
 
 Rendered as:
 
-  .[name]{
+  @mixin [name](){
     [value];
   } 
   
@@ -27,10 +27,12 @@ Rendered as:
 {[ let token = context.token /]}
 
 {[ inject "rendered-description" context token /]}
-@mixin {[ inject "rendered-name" context token /]} 
+@mixin {[ inject "rendered-name" context token /]}()
 
 {[ for alias in findAliases(context.token, context.allTokens) ]}
 , {[ inject "rendered-description" context alias /]}
-@mixin {[ inject "rendered-name" context alias /]}{[/]}{ 
-  {[ inject "rendered-value" context token /]} 
+@mixin {[ inject "rendered-name" context alias /]}()
+{[/]} {
+  {[ inject "rendered-value" context token /]}
+
 }
