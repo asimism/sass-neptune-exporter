@@ -1,0 +1,28 @@
+{
+    "blueprints": [
+        {
+            "invoke": "_colors.pr",
+            "write_to": "colors.scss"
+        },
+        {
+            "invoke": "_borders.pr",
+            "write_to": "borders.scss"
+        },
+        {
+            "invoke": "_gradients.pr",
+            "write_to": "gradients.scss"
+        },
+        {
+            "invoke": "_measures.pr",
+            "write_to": "measures.scss"
+        },
+        {
+            "invoke": "_shadows.pr",
+            "write_to": "shadows.scss"
+        },
+        {
+            "invoke": "typography.pr",
+            "write_to": "_typography.scss"
+        }
+    ]
+}
