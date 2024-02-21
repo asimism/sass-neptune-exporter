@@ -1,24 +1,24 @@
 {
     "blueprints": [
         {
-            "invoke": "_colors.pr",
-            "write_to": "colors.scss"
+            "invoke": "colors.pr",
+            "write_to": "_colors.scss"
         },
         {
-            "invoke": "_borders.pr",
-            "write_to": "borders.scss"
+            "invoke": "borders.pr",
+            "write_to": "_borders.scss"
         },
         {
-            "invoke": "_gradients.pr",
-            "write_to": "gradients.scss"
+            "invoke": "gradients.pr",
+            "write_to": "_gradients.scss"
         },
         {
-            "invoke": "_measures.pr",
-            "write_to": "measures.scss"
+            "invoke": "measures.pr",
+            "write_to": "_measures.scss"
         },
         {
-            "invoke": "_shadows.pr",
-            "write_to": "shadows.scss"
+            "invoke": "shadows.pr",
+            "write_to": "_shadows.scss"
         },
         {
             "invoke": "typography.pr",
